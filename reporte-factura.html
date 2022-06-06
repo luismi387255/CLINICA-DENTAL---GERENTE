@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Boleta y Facturas</title>
+
+    <style>
+  .contedor{
+    background-color: aqua;
+    width: 80px;
+    height: 30px;
+    height: auto;
+    display: flex;
+}
+.fecha{
+font-size: medium;
+padding: 16px;
+}
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.navnight{
+    height: 400;
+    border: aqua;
+
+}
+img{
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    align-content: right;
+    
+}
+.navbar{
+    letter-spacing: 20cm;
+    padding: 200px;
+    text-align: right;
+
+}
+td{
+    padding: 10px;
+}
+body{
+background-color: aquamarine;
+}
+.total{
+text-align: right;
+padding: 20px;
+}
+.one{
+    text-align: right;
+    text-decoration: blue;
+    padding: 10px;
+}
+
+    </style>
+    
+
+</head>
+<body>
+    <div class="nav">
+    <center><h5>REPORTE DE BOLETA Y FACTURAS</h5></center>
+        <div class="contendor">
+           <div class="fecha">
+            <space-between>
+            <input type="date" name=" fecha inical" id="fecha">
+            <input type="date" name="Fecha final" id="fecha">}
+            <button class="btn btn-sm">Buscar</button>
+            </space-between>
+            </div>
+            <input type="radio" id="radio1" name="grupo" > BOLETA <a href="https://www.youtube.com/watch?v=eIsDihgjAi0"></a>
+            <br>
+            <input type="radio" id="radio2" name="grupo">FACTURA
+            <br>
+            <input type="radio" id="radio3" name="grupo">FACTURA/BOLETA
+            <br><br>
+            <input type="button" value="Mostrar" onclick="mostrarSeleccionado()">
+            <table width="80%" border="1">
+                <tr>
+                    <th colspan="1"> Numero de factura </th>
+                    <th colspan="1">fecha factura</th>
+                    <th colspan="1">hora factura</th>
+                    <th colspan="1">DNI paciente</th>
+                    <th colspan="1">Numero de Consulta</th>
+                    <th colspan="1">Descripcion</th>
+                    <th colspan="1">Importe</th>
+
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text">
+                    </td> 
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td><td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <td>
+                    <input type="text">
+                </td> 
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td><td>
+                    <input type="text">
+                </td>
+            </tr>
+            <td>
+                <input type="text">
+            </td> 
+            <td>
+                <input type="text">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+            <td>
+                <input type="text">
+            </td><td>
+                <input type="text">
+            </td>
+        </tr>
+  
+            </table>
+            <table class="one">
+                <td>total</td>
+            </table>
+
+            <div class="navbar">
+            <button type="button" > <img src="inpresora.png" alt="impresora" ></button>
+            </div>
+            
+           
+        </div>
+        
+       
+        <script>
+            function cambioFechaSalida(fecha) {
+            var dtm = new Date($('#<%=tbSalida.ClientID %>').val());
+            var dtm2 = new Date(fecha);
+            var operacion = (dtm2 - dtm) / 86400000;
+            $("#ddlNoches").val(operacion); 
+           }
+
+        function button(boleta){
+            var boleta=new boleta(alert)
+        } 
+        </script>
+</body>
+</html>

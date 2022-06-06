@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+    
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <center>
+        <H4>RESPONDER RECLAMOS</H4>
+       </center>
+    
+    <table>
+
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+
+
+                    <div>
+                        <label>NOMBRE PACIENTE</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+
+                    <div>
+                        <label>APELLIDO PACIENTE</label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+
+                    <div>
+                        <label>DNI O RUC PACIENTE</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+
+                    <div>
+                        <label>MOTIVO DE RECLAMO </label>
+                        <input type="text" name="city" id="city">
+                    </div>
+
+                    <div>
+                        <label>ODONTOLOGO </label>
+                        <input type="text" name="MAA" id="city">
+                    </div>
+                
+                    <div>
+                        <label>RESPUESTA</label>
+                        <input type="text" name="MEEE" id="city">
+                    </div>
+                   
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>N° RECLAMO</th>
+                            <th>FECHA</th>
+                            <th>NOMBRE PACIENTE</th>
+                            <th>APELLIDO PACIENTE</th>
+                            <th>DNI O RUC PACIENTE</th>
+                            <th>RECLAMO</th>
+                            <th>RESPONDER</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script1.js"></script>
+</body>
+
+</html>
